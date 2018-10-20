@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+
+.container-header{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+
+/*Portada*/
+
+
+
+.container-portada{
+    width: 100%;
+    height: 500px;
+    height: 500px;
+    height: 500px;
+    position: relative;
+    background-image: url(../img/hoja-azul2.jpg);
+    background-size: 130%;
+    animation: movimiento 20s infinite linear alternate;  
+}
+
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.container-portada2{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    background-image: url(../img/hoja-azul3.jpg);
+    background-size: 150%;
+    animation: movimiento1 20s infinite linear alternate;  
+}
+
+@keyframes movimiento1{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.container-portada2{
+    width: 100%;
+    height: 650px;
+    position: relative;
+    background-image: url(../img/hoja-azul1.jpg);
+    background-size: 150%;
+    animation: movimiento2 20s infinite linear alternate;  
+}
+
+@keyframes movimiento2{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.5;
+}
+.capa-gradient1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.4;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+.details1{
+    width: 100%;
+    max-width: 500px;
+    position:relative;
+    top: 30px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100px;
+    margin-left: 10px;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 18px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+
+@media screen and (max-width: 500px){
+    .details p{
+        font-size: 18px;
+    }
+}
